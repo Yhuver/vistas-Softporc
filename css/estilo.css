@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave');
+html{
+	box-sizing: border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	/*background-color: #45818e;*/
+	background-image: url(../img/fondo.jpg);
+
+}
+div.contenedor{
+	float: left;
+	width: 35%;
+	height: 647px;
+	background-color: #ffffff;
+	background-color: rgba(105, 44, 23, .3);
+
+	padding-top: 10px;
+}
+div.contenedor main{
+	width: 94%;
+	height: 50%;
+	border: 3px solid black;
+	margin: 0 auto;
+	padding-top: 20px;
+	background-image: url(../img/Imagen1.jpg);
+	
+	background-size: cover;
+}
+form{
+	width: 85%;
+	margin: 0 auto;
+}
+main form h1{
+
+	font-size: 2.5rem;
+	margin-bottom: 18px;
+	color: #000000;
+
+}
+div.input-group{
+	margin-bottom: 14px;
+	
+}
+div.input-group span{
+	border: 0.5px solid #c2cfd6;
+	width: 35px;
+	padding: 8px 10px;
+	padding-bottom: 9px;
+	background-color: rgba(240,243,245,1);
+	
+	}
+div.input-group input{
+	height: 35px;
+	width: 290px;
+	border: 0.5px solid #c2cfd6; 
+	margin-left: -3.94px;
+	padding-left: 15px;
+
+
+	
+}
+form button{
+	background-color: #20a8d8;
+	width: 99-72px;
+	height: 35px;
+	border-color: #20a8d8;
+	padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: white;
+}
+form a{
+	display: block;
+	margin-top: 30px;
+	color: #20a8d8;
+	font: 400 15px Arial;
+}
+nav{
+
+}
+nav a{
+	margin-top: 50px;
+	display: block;
+	color: #20a8d8;
+	font: 400 20px Arial;
+	text-align: center;
+	text-decoration-line: none;
+	font-family: 'Sedgwick Ave', cursive;
+	
+}
+div.informacion{
+	float: right;
+	width: 65%;
+	height: 655px;
+}
+div.descripcion{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(240, 248, 255, 0.6);
+	padding: 40px;
+}
+div.quienes_somos_contenido h1{
+	text-align: center;
+}
