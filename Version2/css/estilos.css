@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 html{
 	box-sizing: border-box;
 }
@@ -8,13 +9,83 @@ html{
 	margin: 0;
 	padding: 0;
 }
+body, html{
+	height: 100%;
+}
 div.login{
+	float: right;
 	background-color: white;
 	width: 35%;
-	float: right;
+	height: 100%;
+	font-family: 'Merriweather', serif;
+}
+div.login nav ul{
+	padding: 35px 25px;
+}
+div.login nav ul li{
+	
+	font-weight: 300;
+	font-size: 18px;
+	display: inline;
+	margin-left: 28px;
+
+}
+div.login nav ul li a{
+	text-decoration: none;
+	color: #000;
+}
+
+main.contenido{
+	padding: 30px 45px;
+}
+main.contenido h1{
+	font-size: 1.8em;
+	margin-bottom: 25px;
+}
+main.contenido .input-group{
+	margin-bottom: 25px;
+}
+main.contenido div.input-group span{
+	border: 0.5px solid #c2cfd6;
+	width: 35px;
+	padding: 9px 10px;
+	padding-bottom: 9px;
+	background-color: rgba(240,243,245,1);
+}
+main.contenido div.input-group input{
+	height: 39px;
+	width: 310px;
+	border: 0.5px solid #c2cfd6; 
+	margin-left: -3.94px;
+	padding-left: 15px;
+}
+main.contenido p{
+	font-size: 13px;
+	line-height: 170%;
+	margin-bottom: 24px;
+
+}
+main.contenido p a{
+	text-decoration: none;
+}
+main.contenido form button{
+	background-color: #0070E0;
+	width: 345px;
+	height: 45px;
+	border-color: #20a8d8;
+	padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: white;
 }
 div.informacion{
-	background-color: blue;
-	width: 65%;
 	float: left;
+	width: 65%;
+	height: 100%;
+	background-image: url(../img/fondo.jpg);
+	
+}
+div.informacion nav{
+	color: white;
 }
