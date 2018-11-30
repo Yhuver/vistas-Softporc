@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 html{
 	box-sizing: border-box;
+
 }
 *, *:before, *:after{
 	box-sizing: inherit;
@@ -58,6 +59,7 @@ form.login_recuperacion{
 	height: 90%;
 	font-family: 'Merriweather', serif;
 	overflow-y:hidden;
+	overflow-x: hidden;
 }
 form.login_recuperacion h1{
 	font-size: 1.8em;
@@ -106,6 +108,7 @@ div.informacion{
 	height: 100%;
 	background-image: url(../img/fondo.jpg);
 	position: relative;
+
 }
 div.informacion:before{
 	content:"";
@@ -113,9 +116,10 @@ div.informacion:before{
 	height: 100%;	
 	position: absolute;
 	background-color: rgba(97, 8, 42,.4);
+
 }
 div.informacion header nav ul li, div.informacion header figure,
-div.informacion main h1, div.informacion main p{
+h1.titulo, p.parrafo{
 	position: relative;
 }
 div.informacion header{
@@ -153,21 +157,23 @@ div.informacion header nav ul li a{
 }
 div.informacion main{
 	width: 100%;
+	height: 80%;
 	color: white;
 	padding-left: 100px;
+	position: relative;
 }
-div.informacion main h1{
+h1.titulo{
 	font-size: calc(40px + 31 * ((100vw - 375px) / 1065));
 	padding-right: 100px;
 	color: #b3d0e7;
 	font-family: 'Merriweather', serif;
 	margin-bottom: 30px;
-	
+
 }
-div.informacion main p{
+p.parrafo{
 	width: 50%;
 	font-family: 'Merriweather', serif;
 	line-height: 130%;
 	font-size: 18px;
-	
+	color: white;
 }
