@@ -9,6 +9,13 @@ html{
 	margin: 0;
 	padding: 0;
 }
+.clearfix:before, .clearfix:after{
+	content: '';
+	display: table; 
+}
+.clearfix:after{
+clear: both;
+}
 body, html{
 	height: 100%;
 }
@@ -19,8 +26,13 @@ div.login{
 	height: 100%;
 	font-family: 'Merriweather', serif;
 }
+div.login nav{
+	width: 422.14px;
+	height: 90px;
+}
 div.login nav ul{
 	padding: 35px 25px;
+	font-family: 'Merriweather', serif;
 }
 div.login nav ul li{
 	
@@ -36,39 +48,48 @@ div.login nav ul li a{
 }
 
 main.contenido{
+	height: 80%;
+	width: 100%;
 	padding: 30px 45px;
+	font-family: 'Merriweather', serif;
 }
-main.contenido h1{
+form.login_recuperacion{
+	width: 370px;
+	height: 90%;
+	font-family: 'Merriweather', serif;
+	overflow-y:hidden;
+}
+form.login_recuperacion h1{
 	font-size: 1.8em;
 	margin-bottom: 25px;
 }
-main.contenido .input-group{
+form.login_recuperacion .input-group{
 	margin-bottom: 25px;
 }
-main.contenido div.input-group span{
+form.login_recuperacion div.input-group span{
 	border: 0.5px solid #c2cfd6;
 	width: 35px;
 	padding: 9px 10px;
 	padding-bottom: 9px;
 	background-color: rgba(240,243,245,1);
 }
-main.contenido div.input-group input{
+form.login_recuperacion div.input-group input{
 	height: 39px;
 	width: 310px;
 	border: 0.5px solid #c2cfd6; 
 	margin-left: -3.94px;
 	padding-left: 15px;
 }
-main.contenido p{
+form.login_recuperacion p{
 	font-size: 13px;
 	line-height: 170%;
 	margin-bottom: 24px;
 
 }
-main.contenido p a{
+form.login_recuperacion p a{
 	text-decoration: none;
 }
-main.contenido form button{
+form.login_recuperacion button{
 	background-color: #0070E0;
 	width: 345px;
 	height: 45px;
@@ -84,8 +105,69 @@ div.informacion{
 	width: 65%;
 	height: 100%;
 	background-image: url(../img/fondo.jpg);
+	position: relative;
+}
+div.informacion:before{
+	content:"";
+	width: 100%;
+	height: 100%;	
+	position: absolute;
+	background-color: rgba(97, 8, 42,.4);
+}
+div.informacion header nav ul li, div.informacion header figure,
+div.informacion main h1, div.informacion main p{
+	position: relative;
+}
+div.informacion header{
+	width: 100%;
+	height: 20%;
+}
+div.informacion header figure{
+	width: 20%;
+	float: left;
+	padding: 20px;
+}
+div.informacion header nav{
+	width: 80%;
+	float: right;
+	color: white;
+	padding: 25px;
+	padding-top: 35px;
+}
+div.informacion header nav ul{
+	display: inline;
+}
+div.informacion header nav ul li{
+	display: inline;
+	font-family: 'Merriweather', serif;
+	font-size: 20px;
+	font-weight: 800;
+	margin-right: 100px;
+}
+div.informacion header nav ul > li{
+	margin-left: 25px;
+}
+div.informacion header nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+div.informacion main{
+	width: 100%;
+	color: white;
+	padding-left: 100px;
+}
+div.informacion main h1{
+	font-size: calc(40px + 31 * ((100vw - 375px) / 1065));
+	padding-right: 100px;
+	color: #b3d0e7;
+	font-family: 'Merriweather', serif;
+	margin-bottom: 30px;
 	
 }
-div.informacion nav{
-	color: white;
+div.informacion main p{
+	width: 50%;
+	font-family: 'Merriweather', serif;
+	line-height: 130%;
+	font-size: 18px;
+	
 }

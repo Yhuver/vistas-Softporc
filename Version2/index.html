@@ -9,15 +9,15 @@
 	<script type="text/javascript" src="js/funciones.js"></script>
 </head>
 <body>
-	<div class="login">
+	<div class="login" >
 		<nav>
 			<ul>
-				<li><a href="#">Inicia sesión</a></li>
-				<li><a href="#">Olvido su contraseña</a></li>
+				<li><a href="#" onclick=" opcionIniciarSesion()">Inicia sesión</a></li>
+				<li><a href="#" onclick="opcionRecuperarContraseña()">Olvido su contraseña</a></li>
 			</ul>
 		</nav>
-		<main class="contenido">
-			<form>
+		<main class="contenido" id="formularios">
+			<form class="login_recuperacion">
 				<h1>Acceder</h1>
 			<div class="input-group mb-3">
                 <span class="input-group-addon"><i class="icon-user"></i></span>
@@ -33,19 +33,28 @@
 		</main>
 	</div>
 	<div class="informacion">
-		<figure class="img">
+		<header>
+		<figure class="img clearfix">
 			<img src="img/logo.png" width="130px;">
 		</figure>
-		<nav>
+		<nav class="clearfix">
 			<ul>
-				<li>Nosotros</li>
-				<li>Trailer</li>
-				<li>Contactar</li>
+				<li><a href="#">Nosotros</a></li>
+				<li><a href="#">Trailer</a></li>
+				<li><a href="#">Contactar</a></li>
 			</ul>
-			<main>
-				
-			</main>
 		</nav>
+		</header>
+			<main>
+				<h1>
+					Cuanto más hacemos, más podemos hacer con Softpig.
+				</h1>
+				<p>
+					Softpig es un software para administrar
+					y gestionar los procesos internos de las granjas porcinas, de manera que 
+					tu trabajo como ganadero pueda ser mas gratificante.
+				</p>
+			</main>
 	</div>
 
 </body>
